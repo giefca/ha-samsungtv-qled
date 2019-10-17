@@ -1,0 +1,1 @@
+"""Samsungtv component compatible with 2018 Qled."""
