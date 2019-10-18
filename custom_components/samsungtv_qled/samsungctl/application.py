@@ -7,26 +7,10 @@ APP_URL_FORMAT = "http://{}:8001/api/v2/applications/{}"
 APPS = {'YouTube': '111299001912',
         'Plex': '3201512006963',
         'Prime Video': '3201512006785',
-        'Universal Guide': '3201710015067',
         'Netflix': '11101200001',
         'Apple TV': '3201807016597',
-        'Steam Link': '3201702011851',
-        'MyCANAL': '3201606009910',
-        # 'Browser': 'org.tizen.browser',
         'Spotify': '3201606009684',
-        'Molotov': '3201611011210',
-        'SmartThings': '3201710015016',
-        'e-Manual': '20182100010',
         'Google Play': '3201601007250',
-        'Gallery': '3201710015037',
-        'Rakuten TV': '3201511006428',
-        'RMC Sport': '3201704012212',
-        'MYTF1 VOD': '3201905018355',
-        'Blacknut': '3201811017333',
-        'Facebook Watch': '11091000000',
-        'McAfee Security for TV': '3201612011418',
-        'OCS': '3201703012029',
-        'Playzer': '3201810017091'
         }
 
 
