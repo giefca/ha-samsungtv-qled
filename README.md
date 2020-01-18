@@ -1,3 +1,9 @@
+# This component is outdated
+
+You should use jaruba's https://github.com/jaruba/ha-samsungtv-custom
+
+
+
 # SamsungTV custom component
 This is a custom component compatible with Samsung QLED TVs. 
 (It was developped to work with my 2018 Q9FN and never had been tested with an other TV.)
