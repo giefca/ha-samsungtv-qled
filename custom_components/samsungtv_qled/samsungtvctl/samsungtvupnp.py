@@ -12,6 +12,8 @@ class SamsungTVUpnp:
     def __init__(self, host, app_list=None):
         self.host = host
         self._app_list = app_list
+        self.volume = 0
+        self.mute = False
 
     def SOAPrequest(self, action, arguments, protocole):
         headers = {'SOAPAction': '"urn:schemas-upnp-org:service:{protocole}:1#{action}"'.format(action=action, protocole=protocole), 'content-type': 'text/xml'}
