@@ -1,8 +1,13 @@
 {
-    "domain": "samsungtv_qled",
-    "name": "Samsungtv Qled",
-    "documentation": "",
-    "requirements": [],
-    "dependencies": [],
-    "codeowners": []
-  }
+  "domain": "samsungtv_qled",
+  "name": "Samsungtv Qled",
+  "documentation": "https://github.com/giefca/ha-samsungtv-qled",
+  "requirements": [
+    "samsungtvws[websocket-client]==1.1.4",
+    "websocket-client==0.56.0",
+    "wakeonlan==1.1.6"
+  ],
+  "dependencies": [],
+  "codeowners": ["@giefca"],
+  "homeassistant": "0.99.3"
+}

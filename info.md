@@ -1,3 +1,9 @@
+[![](https://img.shields.io/github/release/giefca/ha-samsungtv-qled/all.svg?style=for-the-badge)](https://github.com/giefca/ha-samsungtv-qled/releases)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+[![](https://img.shields.io/github/license/giefca/ha-samsungtv-qled?style=for-the-badge)](LICENSE)
+[![](https://img.shields.io/badge/MAINTAINER-%40giefca-red?style=for-the-badge)](https://github.com/giefca)
+[![](https://img.shields.io/badge/COMMUNITY-FORUM-success?style=for-the-badge)](https://community.home-assistant.io)
+
 # SamsungTV custom component
 This is a custom component compatible with Samsung QLED TVs. 
 This is still a work in progress and sometimes you might have issues.
