@@ -249,12 +249,14 @@ class SamsungTVDevice(MediaPlayerDevice):
             except:
                 self._state = STATE_OFF
 
+        # Smartthings ping
         elif self._update_method == "smartthings":
             self._smarttv.device_update()
             if self._smarttv._state == "on":
                 self._state = STATE_ON
             else:
-            	self._state = STATE_OFF
+                self._state = STATE_OFF
+
         # WS ping
         else:
             self.send_command("KEY")
@@ -278,9 +280,6 @@ class SamsungTVDevice(MediaPlayerDevice):
     def update(self):
         """Update state of device."""
         self._ping_device()
-        
-        # if self._api_key is not None:
-        #     self._smarttv.device_update()
 
     def send_command(self, payload, command_type = "send_key", retry_count = 1):
         """Send a key to the tv and handles exceptions."""
@@ -399,6 +398,15 @@ class SamsungTVDevice(MediaPlayerDevice):
         else:
             self._sound_mode = self._smarttv._sound_mode
         return self._sound_mode
+    
+    @property
+    def sound_mode_list(self):
+        """Available sound modes."""
+        if self._api_key is None:
+            self._sound_mode_list = None
+        else:
+            self._sound_mode_list = self._smarttv._supported_sound_modes
+        return self._sound_mode_list
 
     @property
     def supported_features(self):
@@ -527,7 +535,7 @@ class SamsungTVDevice(MediaPlayerDevice):
             self._playing = True
 
         else:
-            _LOGGER.error("Unsupported media type")
+            _LOGGER.error("Unsupported media type: " + media_type)
             return
 
     async def async_select_source(self, source):

@@ -8,7 +8,7 @@
 This is a custom component compatible with Samsung QLED TVs. 
 This is still a work in progress and sometimes you might have issues.
 To get all features you must connect your TV to Smartthings.<br/>
-This component get inspiration from the work of @xchwarze, @jaruba and @pegatron89.
+This component is inspired by the work of @xchwarze, @jaruba and @pegatron89.
 
 # Features
 
@@ -24,9 +24,9 @@ This component get inspiration from the work of @xchwarze, @jaruba and @pegatron
 - Get audio profile
 
 **What the component can't do:**
-- change audio profile (yet)
+- change audio profile
 - change video profile
-- lots of remote KEYs can't be used on QLED TVs ()
+- lots of remote KEYs can't be used on QLED TVs
 
 # Installation (manual)
 1. Download the ``custom_components`` folder

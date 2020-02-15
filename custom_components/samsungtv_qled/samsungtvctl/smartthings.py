@@ -68,7 +68,9 @@ class SmartthingsTV:
         if self._channel_name != ""  and self._channel == '':
             self._channel_name = self._channel_name.split('.')[1]
         self._picture_mode = data['main']['pictureMode']['value']
+        self._supported_picture_modes = data['main']['supportedPictureModes']['value']
         self._sound_mode = data['main']['soundMode']['value']
+        self._supported_sound_modes = data['main']['supportedSoundModes']['value']
 
     def send_command(self, command):
         requests.post("https://api.smartthings.com/v1/devices/" + self._device_id + "/commands", data=command, headers={"Authorization": "Bearer " + self._api_key})
@@ -102,4 +104,13 @@ class SmartthingsTV:
 
     def unmute(self):
         self.send_command("{'commands':[{'component': 'main','capability': 'audioMute','command': 'unmute'}]}")
+
+    def fast_forward(self):
+        self.send_command("{'commands':[{'component': 'main','capability': 'mediaPlayback','command': 'fastForward'}]}")
+
+    def rewind(self):
+        self.send_command("{'commands':[{'component': 'main','capability': 'mediaPlayback','command': 'rewind'}]}")
+
+
+
 
